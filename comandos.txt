@@ -2,3 +2,8 @@ npm install cypress --save-dev
 
 npx cypress open
 
+npx cypress run
+
+npm install --save-dev mochawesome
+
+npx cypress run --reporter mochawesome

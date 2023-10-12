@@ -14,6 +14,8 @@ describe('API Alurapic', () => {
     }) */
 
     it('Fotos do usuário', () => {
+
+        const tempoEsperado = Math.random() * 50;
       
         cy.request({
             method: 'GET',
@@ -24,6 +26,8 @@ describe('API Alurapic', () => {
             //res.body[0] pega a primeira imagem do body
             expect(res.body[0]).to.have.property('description')
             expect(res.body[0].description).to.be.equal('lablink')
+            //pode gerar flaky tests - Testes que variam o resultado conforme execução não é uma boa prática
+            expect(res.duration).to.be.lte(tempoEsperado)
         })
     })
   })

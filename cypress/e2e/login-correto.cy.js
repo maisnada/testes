@@ -1,6 +1,6 @@
 describe('Pagina de login', () => {
 
-  //todos os passos precisaram da execução desse comando
+  //todos os passos precisaram da execução desse comando//
   beforeEach(() => {
 
     cy.visit('http://localhost:4200/#/home')
@@ -8,7 +8,9 @@ describe('Pagina de login', () => {
   }) 
 
     it('Preenche os campos lo login corretamente para realizar login', () => {
-      /*cy.visit('http://localhost:4200/#/home') 
+      /*
+      execução anterior
+      cy.visit('http://localhost:4200/#/home') 
       cy.get('[data-test="loginUserName"]').type('flavio');
       cy.get('[data-test="loginPassword"]').type('123');
       cy.contains('button', 'login').click(); */ 

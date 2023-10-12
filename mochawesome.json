@@ -1,0 +1,512 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2023-10-12T01:50:50.742Z",
+    "end": "2023-10-12T02:18:31.682Z",
+    "duration": 1660940
+  },
+  "results": [
+    {
+      "uuid": "93d4dfce-6ba8-45cb-adf5-b9c5a3a5c625",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cadastro-correto.cy.js",
+      "file": "cypress\\e2e\\cadastro-correto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9a498c97-278c-423b-a3fd-bbfeeb520a6d",
+          "title": "Pagina de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Preencher os campos do formulario corretamente para cadastrar um novo usuario",
+              "fullTitle": "Pagina de cadastro Preencher os campos do formulario corretamente para cadastrar um novo usuario",
+              "timedOut": null,
+              "duration": 1682,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:4200/#/home');\ncy.contains('a', 'Register now').click();\ncy.get('[data-test=\"email\"]').type('maisnada@gmail.com');\ncy.get('[data-test=\"fullName\"]').type('Marcelo Palmito');\ncy.get('[data-test=\"registerUserName\"]').type('maisnada');\ncy.get('[data-test=\"registerPassword\"]').type('maisnada123');\ncy.contains('button', 'Register').click();",
+              "err": {},
+              "uuid": "738cb3c5-6f7f-4a6f-9dc3-5f082f4e2853",
+              "parentUUID": "9a498c97-278c-423b-a3fd-bbfeeb520a6d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "738cb3c5-6f7f-4a6f-9dc3-5f082f4e2853"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1682,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6225b2d4-37df-4710-8d2f-3e6293dd611a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cadastro-incorreto.cy.js",
+      "file": "cypress\\e2e\\cadastro-incorreto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7e95da26-45f5-42bf-81d2-4771df01bd30",
+          "title": "Pagina de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Preencher os campos do formulario de forma incorreta",
+              "fullTitle": "Pagina de cadastro Preencher os campos do formulario de forma incorreta",
+              "timedOut": null,
+              "duration": 699,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:4200/#/home');\ncy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.contains('button', 'Register').click();\ncy.contains('Email is required!').should('be.visible');\ncy.contains('Full name is required!').should('be.visible');\ncy.contains('User name is required!').should('be.visible');\ncy.contains('Password is required!').should('be.visible');",
+              "err": {},
+              "uuid": "80f25cd9-b12b-43a3-9656-333e3b2c3d9b",
+              "parentUUID": "7e95da26-45f5-42bf-81d2-4771df01bd30",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "80f25cd9-b12b-43a3-9656-333e3b2c3d9b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 699,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b747e215-fb11-4727-9003-4b29e9fa0a6f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-correto.cy.js",
+      "file": "cypress\\e2e\\login-correto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1a952c35-33d2-49c6-91aa-c239afb29324",
+          "title": "Pagina de login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Preenche os campos lo login corretamente para realizar login",
+              "fullTitle": "Pagina de login Preenche os campos lo login corretamente para realizar login",
+              "timedOut": null,
+              "duration": 808,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:4200/#/home');\ncy.get('[data-test=\"loginUserName\"]').type('flavio');\ncy.get('[data-test=\"loginPassword\"]').type('123');\ncy.contains('button', 'login').click();",
+              "err": {},
+              "uuid": "aeaf01a7-3cb5-4268-9b30-31d64e69110c",
+              "parentUUID": "1a952c35-33d2-49c6-91aa-c239afb29324",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aeaf01a7-3cb5-4268-9b30-31d64e69110c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 808,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8cc49de7-7455-4fc0-95ab-40002e6fb1d5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-incorreto.cy.js",
+      "file": "cypress\\e2e\\login-incorreto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e3959e54-0494-413d-9d60-eb3eb676267e",
+          "title": "Pagina de login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica mensagem de campos obrigatorios",
+              "fullTitle": "Pagina de login Verifica mensagem de campos obrigatorios",
+              "timedOut": null,
+              "duration": 410,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:4200/#/home');\ncy.contains('User name is required!').should('be.visible');\ncy.contains('Password is required!').should('be.visible');",
+              "err": {},
+              "uuid": "1705a964-d026-4c2b-9bbe-a5dab85fa7ce",
+              "parentUUID": "e3959e54-0494-413d-9d60-eb3eb676267e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1705a964-d026-4c2b-9bbe-a5dab85fa7ce"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 410,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "41601eb2-e4b4-4774-83d1-64d98c85f373",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cadastro-correto.cy.js",
+      "file": "cypress\\e2e\\cadastro-correto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7b48fa6c-dee8-4630-b64d-eac199e6ddb9",
+          "title": "Pagina de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Preencher os campos do formulario corretamente para cadastrar um novo usuario",
+              "fullTitle": "Pagina de cadastro Preencher os campos do formulario corretamente para cadastrar um novo usuario",
+              "timedOut": null,
+              "duration": 1700,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:4200/#/home');\ncy.contains('a', 'Register now').click();\ncy.get('[data-test=\"email\"]').type('maisnada@gmail.com');\ncy.get('[data-test=\"fullName\"]').type('Marcelo Palmito');\ncy.get('[data-test=\"registerUserName\"]').type('maisnada');\ncy.get('[data-test=\"registerPassword\"]').type('maisnada123');\ncy.contains('button', 'Register').click();",
+              "err": {},
+              "uuid": "7e0d2e6c-a07c-44e0-bc23-18a6ebfe9d2c",
+              "parentUUID": "7b48fa6c-dee8-4630-b64d-eac199e6ddb9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7e0d2e6c-a07c-44e0-bc23-18a6ebfe9d2c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1700,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3cf81994-c5ab-4a78-8f3c-79fc7333dec3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cadastro-incorreto.cy.js",
+      "file": "cypress\\e2e\\cadastro-incorreto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1ada08ae-221a-4570-bf35-fc5f2b230bd7",
+          "title": "Pagina de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Preencher os campos do formulario de forma incorreta",
+              "fullTitle": "Pagina de cadastro Preencher os campos do formulario de forma incorreta",
+              "timedOut": null,
+              "duration": 712,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:4200/#/home');\ncy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.contains('button', 'Register').click();\ncy.contains('Email is required!').should('be.visible');\ncy.contains('Full name is required!').should('be.visible');\ncy.contains('User name is required!').should('be.visible');\ncy.contains('Password is required!').should('be.visible');",
+              "err": {},
+              "uuid": "e991c3a1-b80b-48a2-9d5a-4e510f863219",
+              "parentUUID": "1ada08ae-221a-4570-bf35-fc5f2b230bd7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e991c3a1-b80b-48a2-9d5a-4e510f863219"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 712,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1de9f066-9bcb-4f62-8860-edb80f36fd64",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-correto.cy.js",
+      "file": "cypress\\e2e\\login-correto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7b89622f-634c-4533-8983-c990ba86f810",
+          "title": "Pagina de login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Preenche os campos lo login corretamente para realizar login",
+              "fullTitle": "Pagina de login Preenche os campos lo login corretamente para realizar login",
+              "timedOut": null,
+              "duration": 779,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:4200/#/home');\ncy.get('[data-test=\"loginUserName\"]').type('flavio');\ncy.get('[data-test=\"loginPassword\"]').type('123');\ncy.contains('button', 'login').click();",
+              "err": {},
+              "uuid": "eb56c7da-a6d2-478c-914d-802076b163d3",
+              "parentUUID": "7b89622f-634c-4533-8983-c990ba86f810",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eb56c7da-a6d2-478c-914d-802076b163d3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 779,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a81f2c79-a206-4150-8ef6-2432bb6b9c7b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-incorreto.cy.js",
+      "file": "cypress\\e2e\\login-incorreto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "887d704f-e0f9-4bda-a64c-4ce621e10c4c",
+          "title": "Pagina de login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica mensagem de campos obrigatorios",
+              "fullTitle": "Pagina de login Verifica mensagem de campos obrigatorios",
+              "timedOut": null,
+              "duration": 403,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:4200/#/home');\ncy.contains('User name is required!').should('be.visible');\ncy.contains('Password is required!').should('be.visible');",
+              "err": {},
+              "uuid": "0d3a8671-176a-4193-a7d6-039ca28377a9",
+              "parentUUID": "887d704f-e0f9-4bda-a64c-4ce621e10c4c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0d3a8671-176a-4193-a7d6-039ca28377a9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 403,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

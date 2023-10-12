@@ -6,4 +6,15 @@ npx cypress run
 
 npm install --save-dev mochawesome
 
+//gerar arquivos por teste
 npx cypress run --reporter mochawesome
+
+npm install mochawesome-merge --save-dev
+
+npm install --save-dev mochawesome
+
+//mescla toos os *.json em um único arquivo
+npx mochawesome-merge "cypress/report/mochawesome-report/*.json" > mochawesome.json
+
+//gera um html compilnado todo do json criado na mesclagem charset como utf-8
+npx marge ./mochawesome.json  

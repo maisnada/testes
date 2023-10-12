@@ -1,5 +1,5 @@
-describe('Página de cadastro', () => {
-    it('Preencher os campos do formulário de forma incorreta', () => {
+describe('Pagina de cadastro', () => {
+    it('Preencher os campos do formulario de forma incorreta', () => {
       cy.visit('http://localhost:4200/#/home') 
       cy.contains('a', 'Register now').click();
       cy.contains('button', 'Register').click();
